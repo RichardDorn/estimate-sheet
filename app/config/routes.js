@@ -4,11 +4,11 @@ var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var IndexRoute = ReactRouter.IndexRoute;
 var hashHistory = ReactRouter.hashHistory;
-var App = require('../components/App');
+var Main = require('../components/Main');
 
 var routes = (
     <Router history={hashHistory}>
-        <Route path='/' component={App}>
+        <Route path='/' component={Main}>
            
         </Route>
     </Router>
