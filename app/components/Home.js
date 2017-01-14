@@ -1,10 +1,11 @@
 var React = require('react');
+var ProjectInfoContainer = require('../containers/ProjectInfoContainer');
 
 function Home (props){
         return (
-            <div>
-                Home
-            </div>
+            <form>
+                <ProjectInfoContainer />
+            </form>
         );
 };
 
