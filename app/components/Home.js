@@ -1,13 +1,11 @@
 var React = require('react');
 
-var Home = React.createClass({
-    render: function () {
+function Home (props){
         return (
             <div>
                 Home
             </div>
         );
-    }
-});
+};
 
 module.exports = Home;
