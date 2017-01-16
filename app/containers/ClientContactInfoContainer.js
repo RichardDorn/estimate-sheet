@@ -15,28 +15,24 @@ var ClientContactInfoContainer = React.createClass({
         this.setState({
             clientName: e.target.value
         });
-        console.log(this.state.clientName);
     },
 
     handleUpdateClientAddress: function(e){
         this.setState({
             clientAddress: e.target.value
         });
-        console.log(this.state.clientAddress);
     },
 
     handleUpdateClientPhone: function(e){
         this.setState({
             clientPhone: e.target.value
         });
-        console.log(this.state.clientPhone);
     },
 
     handleUpdateClientEmail: function(e){
         this.setState({
             clientEmail: e.target.value
         });
-        console.log(this.state.clientEmail);
     },
     
     render: function () {
