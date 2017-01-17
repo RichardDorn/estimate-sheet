@@ -76,6 +76,90 @@ function PolySheeting(props) {
 
             <div className="row" style={styles.space}>
                 <div className="col-sm-offset-1 col-sm-2">
+                    <p>4X20 Black</p>
+                </div>  
+                
+                <div className="col-sm-2">
+                    <input
+                        className="form-control"
+                        placeholder="0"
+                        onChange={props.onUpdateFour_TwentyBlack}
+                        onFocus={props.onFocusQuantity}
+                        value={props.four_TwentyBlackQuantity}
+                        type="number"
+                        min="0" />
+                </div>
+
+                <div className="col-sm-2">
+                    <p>${props.four_TwentyBlackCost}</p>
+                </div>
+            </div>
+
+            <div className="row" style={styles.space}>
+                <div className="col-sm-offset-1 col-sm-2">
+                    <p>6X20 Equivalent</p>
+                </div>  
+                
+                <div className="col-sm-2">
+                    <input
+                        className="form-control"
+                        placeholder="0"
+                        onChange={props.onUpdateSix_TwentyEq}
+                        onFocus={props.onFocusQuantity}
+                        value={props.six_TwentyEqQuantity}
+                        type="number"
+                        min="0" />
+                </div>
+
+                <div className="col-sm-2">
+                    <p>${props.six_TwentyEqCost}</p>
+                </div>
+            </div>
+
+            <div className="row" style={styles.space}>
+                <div className="col-sm-offset-1 col-sm-2">
+                    <p>6X20 Clear</p>
+                </div>  
+                
+                <div className="col-sm-2">
+                    <input
+                        className="form-control"
+                        placeholder="0"
+                        onChange={props.onUpdateSix_TwentyClear}
+                        onFocus={props.onFocusQuantity}
+                        value={props.six_TwentyClearQuantity}
+                        type="number"
+                        min="0" />
+                </div>
+
+                <div className="col-sm-2">
+                    <p>${props.six_TwentyClearCost}</p>
+                </div>
+            </div>
+
+            <div className="row" style={styles.space}>
+                <div className="col-sm-offset-1 col-sm-2">
+                    <p>6X20 Black</p>
+                </div>  
+                
+                <div className="col-sm-2">
+                    <input
+                        className="form-control"
+                        placeholder="0"
+                        onChange={props.onUpdateSix_TwentyBlack}
+                        onFocus={props.onFocusQuantity}
+                        value={props.six_TwentyBlackQuantity}
+                        type="number"
+                        min="0" />
+                </div>
+
+                <div className="col-sm-2">
+                    <p>${props.six_TwentyBlackCost}</p>
+                </div>
+            </div>
+
+            <div className="row" style={styles.space}>
+                <div className="col-sm-offset-1 col-sm-2">
                     //Product Name
                 </div>  
                 
@@ -105,6 +189,22 @@ PolySheeting.propTypes = {
     onUpdateFour_Twenty: PropTypes.func.isRequired,
     four_TwentyQuantity: PropTypes.number.isRequired,
     four_TwentyCost: PropTypes.number.isRequired,
+
+    onUpdateFour_TwentyBlack: PropTypes.func.isRequired,
+    four_TwentyBlackQuantity: PropTypes.number.isRequired,
+    four_TwentyBlackCost: PropTypes.number.isRequired,
+
+    onUpdateSix_TwentyEq: PropTypes.func.isRequired,
+    six_TwentyEqQuantity: PropTypes.number.isRequired,
+    six_TwentyEqCost: PropTypes.number.isRequired,
+
+    onUpdateSix_TwentyClear: PropTypes.func.isRequired,
+    six_TwentyClearQuantity: PropTypes.number.isRequired,
+    six_TwentyClearCost: PropTypes.number.isRequired,
+
+    onUpdateSix_TwentyBlack: PropTypes.func.isRequired,
+    six_TwentyBlackQuantity: PropTypes.number.isRequired,
+    six_TwentyBlackCost: PropTypes.number.isRequired,
 };
 
 module.exports = PolySheeting;

@@ -5,7 +5,7 @@ var styles = require('../styles');
 
 function ProjectInfo(props) {
     return (
-        <div className="container" style={styles.componentContainer}>
+        <div style={styles.componentContainer}>
             <div className="row">
                 <div className="col-sm-4">
                     <h2><u>Project Info</u></h2>

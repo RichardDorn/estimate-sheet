@@ -3,7 +3,7 @@ var styles = require('../styles');
 
 function MaterialTakeOff(props) {
     return (
-        <div className="container" style={styles.componentContainer}>
+        <div style={styles.componentContainer}>
             <div className="form-group">
                 <div className="row">
                     <div className="col-sm-4">

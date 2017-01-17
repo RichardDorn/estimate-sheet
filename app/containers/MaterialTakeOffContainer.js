@@ -52,6 +52,42 @@ var MaterialTakeOffContainer = React.createClass({
         });
     },
 
+    handleUpdateFour_TwentyBlack: function (e) {
+        var polySheeting = this.state.polySheeting;
+        polySheeting.four_TwentyBlackQuantity = parseInt(e.target.value);
+        polySheeting.four_TwentyBlackCost = parseInt(e.target.value) * 43.00 ;
+        this.setState({
+            polySheeting: polySheeting
+        });
+    },
+
+    handleUpdateSix_TwentyEq: function (e) {
+        var polySheeting = this.state.polySheeting;
+        polySheeting.six_TwentyEqQuantity = parseInt(e.target.value);
+        polySheeting.six_TwentyEqCost = parseInt(e.target.value) * 48.50 ;
+        this.setState({
+            polySheeting: polySheeting
+        });
+    },
+
+    handleUpdateSix_TwentyClear: function (e) {
+        var polySheeting = this.state.polySheeting;
+        polySheeting.six_TwentyClearQuantity = parseInt(e.target.value);
+        polySheeting.six_TwentyClearCost = parseInt(e.target.value) * 70.50;
+        this.setState({
+            polySheeting: polySheeting
+        });
+    },
+
+    handleUpdateSix_TwentyBlack: function (e) {
+        var polySheeting = this.state.polySheeting;
+        polySheeting.six_TwentyBlackQuantity = parseInt(e.target.value);
+        polySheeting.six_TwentyBlackCost = parseInt(e.target.value) * 60.00;
+        this.setState({
+            polySheeting: polySheeting
+        });
+    },
+
     handleFocusQuantity: function(e){
         e.target.select();
     },
@@ -73,7 +109,27 @@ var MaterialTakeOffContainer = React.createClass({
                     onUpdateFour_Twenty={this.handleUpdateFour_Twenty}
                     onFocusQuantity={this.handleFocusQuantity}
                     four_TwentyQuantity={this.state.polySheeting.four_TwentyQuantity}
-                    four_TwentyCost={this.state.polySheeting.four_TwentyCost} />
+                    four_TwentyCost={this.state.polySheeting.four_TwentyCost}
+                    
+                    onUpdateFour_TwentyBlack={this.handleUpdateFour_TwentyBlack}
+                    onFocusQuantity={this.handleFocusQuantity}
+                    four_TwentyBlackQuantity={this.state.polySheeting.four_TwentyBlackQuantity}
+                    four_TwentyBlackCost={this.state.polySheeting.four_TwentyBlackCost}
+                    
+                    onUpdateSix_TwentyEq={this.handleUpdateSix_TwentyEq}
+                    onFocusQuantity={this.handleFocusQuantity}
+                    six_TwentyEqQuantity={this.state.polySheeting.six_TwentyEqQuantity}
+                    six_TwentyEqCost={this.state.polySheeting.six_TwentyEqCost}
+                    
+                    onUpdateSix_TwentyClear={this.handleUpdateSix_TwentyClear}
+                    onFocusQuantity={this.handleFocusQuantity}
+                    six_TwentyClearQuantity={this.state.polySheeting.six_TwentyClearQuantity}
+                    six_TwentyClearCost={this.state.polySheeting.six_TwentyClearCost}
+                    
+                    onUpdateSix_TwentyBlack={this.handleUpdateSix_TwentyBlack}
+                    onFocusQuantity={this.handleFocusQuantity}
+                    six_TwentyBlackQuantity={this.state.polySheeting.six_TwentyBlackQuantity}
+                    six_TwentyBlackCost={this.state.polySheeting.six_TwentyBlackCost} />
             </MaterialTakeOff>
             );
     }

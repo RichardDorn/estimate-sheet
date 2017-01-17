@@ -4,9 +4,13 @@ var styles = {
     },
 
     componentContainer: {
+        borderBottom: '2px groove gray',
+    },
+
+    homeContainer: {
         border: '2px solid black',
         borderRadius: '5px',
-        background: '#76877D'
+        background: '#E1E5F2',
     },
 };
 
