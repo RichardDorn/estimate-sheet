@@ -34,11 +34,16 @@ var MaterialTakeOffContainer = React.createClass({
         });
     },
 
+    handleFocusQuantity: function(e){
+        e.target.select();
+    },
+
     render: function () {
         return (
             <MaterialTakeOff>
                 <PolySheeting 
                     onUpdateFour_TenClear={this.handleUpdateFour_TenClear}
+                    onFocusQuantity={this.handleFocusQuantity}
                     four_TenClearQuantity={this.state.polySheeting.four_TenClearQuantity}
                     four_TenClearCost={this.state.polySheeting.four_TenClearCost} />
             </MaterialTakeOff>

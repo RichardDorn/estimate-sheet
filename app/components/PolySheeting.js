@@ -10,6 +10,7 @@ function PolySheeting(props) {
                 className="form-control"
                 placeholder="0"
                 onChange={props.onUpdateFour_TenClear}
+                onFocus={props.onFocusQuantity}
                 value={props.four_TenClearQuantity}
                 type="number"
                 min="0" />
