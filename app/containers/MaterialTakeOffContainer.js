@@ -34,6 +34,15 @@ var MaterialTakeOffContainer = React.createClass({
         });
     },
 
+    handleUpdateFour_TwentyEq: function (e) {
+        var polySheeting = this.state.polySheeting;
+        polySheeting.four_TwentyEqQuantity = parseInt(e.target.value);
+        polySheeting.four_TwentyEqCost = parseInt(e.target.value) * 1 ; //Remove place holder quantity!! Add real price
+        this.setState({
+            polySheeting: polySheeting
+        });
+    },
+
     handleFocusQuantity: function(e){
         e.target.select();
     },
@@ -45,7 +54,12 @@ var MaterialTakeOffContainer = React.createClass({
                     onUpdateFour_TenClear={this.handleUpdateFour_TenClear}
                     onFocusQuantity={this.handleFocusQuantity}
                     four_TenClearQuantity={this.state.polySheeting.four_TenClearQuantity}
-                    four_TenClearCost={this.state.polySheeting.four_TenClearCost} />
+                    four_TenClearCost={this.state.polySheeting.four_TenClearCost}
+                    
+                    onUpdateFour_TwentyEq={this.handleUpdateFour_TwentyEq}
+                    onFocusQuantity={this.handleFocusQuantity}
+                    four_TwentyEqQuantity={this.state.polySheeting.four_TwentyEqQuantity}
+                    four_TwentyEqCost={this.state.polySheeting.four_TwentyEqCost} />
             </MaterialTakeOff>
             );
     }
