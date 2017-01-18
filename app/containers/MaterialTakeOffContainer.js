@@ -25,67 +25,48 @@ var MaterialTakeOffContainer = React.createClass({
         }
     },
 
-    handleUpdateFour_TenClear: function (e) {
-        var polySheeting = this.state.polySheeting;
-        polySheeting.four_TenClearQuantity = parseInt(e.target.value);
-        polySheeting.four_TenClearCost = parseInt(e.target.value) * 22.25;
+    updateMaterial: function (materialSet, materialQuantityKey, materialCostKey, value, price) {
+        var ms = this.state[materialSet];
+        ms[materialQuantityKey] = parseInt(value);
+        ms[materialCostKey] = parseInt(value) * price;
         this.setState({
-            polySheeting: polySheeting
+            materialSet: ms
         });
+    },
+
+    handleUpdateFour_TenClear: function (e) {
+        value = e.target.value;
+        this.updateMaterial('polySheeting', 'four_TenClearQuantity', 'four_TenClearCost', value, 22.25);
     },
 
     handleUpdateFour_TwentyEq: function (e) {
-        var polySheeting = this.state.polySheeting;
-        polySheeting.four_TwentyEqQuantity = parseInt(e.target.value);
-        polySheeting.four_TwentyEqCost = parseInt(e.target.value) * 1 ; //Remove place holder price!! Add real price
-        this.setState({
-            polySheeting: polySheeting
-        });
+        value = e.target.value;
+        this.updateMaterial('polySheeting', 'four_TwentyEqQuantity', 'four_TwentyEqCost', value, 1.00);
     },
 
     handleUpdateFour_Twenty: function (e) {
-        var polySheeting = this.state.polySheeting;
-        polySheeting.four_TwentyQuantity = parseInt(e.target.value);
-        polySheeting.four_TwentyCost = parseInt(e.target.value) * 43.80 ;
-        this.setState({
-            polySheeting: polySheeting
-        });
+        value = e.target.value;
+        this.updateMaterial('polySheeting', 'four_TwentyQuantity', 'four_TwentyCost', value, 43.80);
     },
 
     handleUpdateFour_TwentyBlack: function (e) {
-        var polySheeting = this.state.polySheeting;
-        polySheeting.four_TwentyBlackQuantity = parseInt(e.target.value);
-        polySheeting.four_TwentyBlackCost = parseInt(e.target.value) * 43.00 ;
-        this.setState({
-            polySheeting: polySheeting
-        });
+        value = e.target.value;
+        this.updateMaterial('polySheeting', 'four_TwentyBlackQuantity', 'four_TwentyBlackCost', value, 43.00);
     },
 
     handleUpdateSix_TwentyEq: function (e) {
-        var polySheeting = this.state.polySheeting;
-        polySheeting.six_TwentyEqQuantity = parseInt(e.target.value);
-        polySheeting.six_TwentyEqCost = parseInt(e.target.value) * 48.50 ;
-        this.setState({
-            polySheeting: polySheeting
-        });
+        value = e.target.value;
+        this.updateMaterial('polySheeting', 'six_TwentyEqQuantity', 'six_TwentyEqCost', value, 48.50);
     },
 
     handleUpdateSix_TwentyClear: function (e) {
-        var polySheeting = this.state.polySheeting;
-        polySheeting.six_TwentyClearQuantity = parseInt(e.target.value);
-        polySheeting.six_TwentyClearCost = parseInt(e.target.value) * 70.50;
-        this.setState({
-            polySheeting: polySheeting
-        });
+        value = e.target.value;
+        this.updateMaterial('polySheeting', 'six_TwentyClearQuantity', 'six_TwentyClearCost', value, 70.50);
     },
 
     handleUpdateSix_TwentyBlack: function (e) {
-        var polySheeting = this.state.polySheeting;
-        polySheeting.six_TwentyBlackQuantity = parseInt(e.target.value);
-        polySheeting.six_TwentyBlackCost = parseInt(e.target.value) * 60.00;
-        this.setState({
-            polySheeting: polySheeting
-        });
+        value = e.target.value;
+        this.updateMaterial('polySheeting', 'six_TwentyBlackQuantity', 'six_TwentyBlackCost', value, 60.00);
     },
 
     handleFocusQuantity: function(e){

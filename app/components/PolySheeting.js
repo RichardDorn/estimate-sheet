@@ -28,7 +28,7 @@ function PolySheeting(props) {
                 </div>
 
                 <div className="col-sm-2">
-                    <p>${props.four_TenClearCost}</p>
+                    <p>${props.four_TenClearCost.toFixed(2)}</p>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@ function PolySheeting(props) {
                 </div>
 
                 <div className="col-sm-2">
-                    <p>${props.four_TwentyEqCost}</p>
+                    <p>${props.four_TwentyEqCost.toFixed(2)}</p>
                 </div>
             </div>
 
@@ -70,7 +70,7 @@ function PolySheeting(props) {
                 </div>
 
                 <div className="col-sm-2">
-                    <p>${props.four_TwentyCost}</p>
+                    <p>${props.four_TwentyCost.toFixed(2)}</p>
                 </div>
             </div>
 
@@ -91,7 +91,7 @@ function PolySheeting(props) {
                 </div>
 
                 <div className="col-sm-2">
-                    <p>${props.four_TwentyBlackCost}</p>
+                    <p>${props.four_TwentyBlackCost.toFixed(2)}</p>
                 </div>
             </div>
 
@@ -112,7 +112,7 @@ function PolySheeting(props) {
                 </div>
 
                 <div className="col-sm-2">
-                    <p>${props.six_TwentyEqCost}</p>
+                    <p>${props.six_TwentyEqCost.toFixed(2)}</p>
                 </div>
             </div>
 
@@ -133,7 +133,7 @@ function PolySheeting(props) {
                 </div>
 
                 <div className="col-sm-2">
-                    <p>${props.six_TwentyClearCost}</p>
+                    <p>${props.six_TwentyClearCost.toFixed(2)}</p>
                 </div>
             </div>
 
@@ -154,7 +154,7 @@ function PolySheeting(props) {
                 </div>
 
                 <div className="col-sm-2">
-                    <p>${props.six_TwentyBlackCost}</p>
+                    <p>${props.six_TwentyBlackCost.toFixed(2)}</p>
                 </div>
             </div>
 
