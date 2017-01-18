@@ -37,7 +37,7 @@ var MaterialTakeOffContainer = React.createClass({
     handleUpdateFour_TwentyEq: function (e) {
         var polySheeting = this.state.polySheeting;
         polySheeting.four_TwentyEqQuantity = parseInt(e.target.value);
-        polySheeting.four_TwentyEqCost = parseInt(e.target.value) * 1 ; //Remove place holder quantity!! Add real price
+        polySheeting.four_TwentyEqCost = parseInt(e.target.value) * 1 ; //Remove place holder price!! Add real price
         this.setState({
             polySheeting: polySheeting
         });
