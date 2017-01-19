@@ -27,45 +27,50 @@ var MaterialTakeOffContainer = React.createClass({
 
     updateMaterial: function (materialSet, materialQuantityKey, materialCostKey, value, price) {
         var ms = this.state[materialSet];
-        ms[materialQuantityKey] = parseInt(value);
-        ms[materialCostKey] = parseInt(value) * price;
+        if(isNaN(value)){
+            ms[materialQuantityKey] = 0;
+            ms[materialCostKey] = 0;
+        }else{
+            ms[materialQuantityKey] = parseInt(value);
+            ms[materialCostKey] = parseInt(value) * price;
+        }
         this.setState({
             materialSet: ms
         });
     },
 
     handleUpdateFour_TenClear: function (e) {
-        value = e.target.value;
+        var value = e.target.value;
         this.updateMaterial('polySheeting', 'four_TenClearQuantity', 'four_TenClearCost', value, 22.25);
     },
 
     handleUpdateFour_TwentyEq: function (e) {
-        value = e.target.value;
+        var value = e.target.value;
         this.updateMaterial('polySheeting', 'four_TwentyEqQuantity', 'four_TwentyEqCost', value, 1.00);
     },
 
     handleUpdateFour_Twenty: function (e) {
-        value = e.target.value;
+        var value = e.target.value;
         this.updateMaterial('polySheeting', 'four_TwentyQuantity', 'four_TwentyCost', value, 43.80);
     },
 
     handleUpdateFour_TwentyBlack: function (e) {
-        value = e.target.value;
+        var value = e.target.value;
         this.updateMaterial('polySheeting', 'four_TwentyBlackQuantity', 'four_TwentyBlackCost', value, 43.00);
     },
 
     handleUpdateSix_TwentyEq: function (e) {
-        value = e.target.value;
+        var value = e.target.value;
         this.updateMaterial('polySheeting', 'six_TwentyEqQuantity', 'six_TwentyEqCost', value, 48.50);
     },
 
     handleUpdateSix_TwentyClear: function (e) {
-        value = e.target.value;
+        var value = e.target.value;
         this.updateMaterial('polySheeting', 'six_TwentyClearQuantity', 'six_TwentyClearCost', value, 70.50);
     },
 
     handleUpdateSix_TwentyBlack: function (e) {
-        value = e.target.value;
+        var value = e.target.value;
         this.updateMaterial('polySheeting', 'six_TwentyBlackQuantity', 'six_TwentyBlackCost', value, 60.00);
     },
 
