@@ -1,6 +1,6 @@
 var React = require('react');
-var ProjectInfoContainer = require('../containers/ProjectInfoContainer');
-var MaterialTakeOffContainer = require('../containers/MaterialTakeOffContainer');
+var ProjectInfoContainer = require('../containers/projectinfo/ProjectInfoContainer');
+var MaterialTakeOffContainer = require('../containers/materialtakeoff/MaterialTakeOffContainer');
 var styles = require('../styles');
 
 function Home (props){

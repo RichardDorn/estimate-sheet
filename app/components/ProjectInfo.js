@@ -1,5 +1,5 @@
 var React = require('react');
-var ClientContactInfoContainer = require('../containers/ClientContactInfoContainer');
+var ClientContactInfoContainer = require('../containers/projectinfo/ClientContactInfoContainer');
 var PropTypes = React.PropTypes;
 var styles = require('../styles');
 
