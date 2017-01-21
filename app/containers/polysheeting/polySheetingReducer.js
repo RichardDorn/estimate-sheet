@@ -1,5 +1,3 @@
-
-
 export default function reducer(state={
     four_TenClearQuantity: 0,
     four_TenClearCost: 0,
