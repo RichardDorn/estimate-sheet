@@ -9,7 +9,14 @@ var Main = React.createClass({
         return (
             <MuiThemeProvider>
                 <div className='main-container' style={styles.bodyFont}>
-                    <h1> Estimate Sheet </h1>
+                    <div className="row">
+                        <div className="col-sm-4">
+                            <img src="../../app/images/logo.png" style={styles.logoStyle} />
+                        </div>
+                        <div className="col-xs-offset-3 col-sm-offset-1 col-sm-4" style={styles.titleStyle}>
+                            <h1> Estimate Sheet </h1>
+                        </div>
+                    </div>
                     {this.props.children}
                 </div>
             </MuiThemeProvider>

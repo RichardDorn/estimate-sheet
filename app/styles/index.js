@@ -28,6 +28,14 @@ var styles = {
     bodyFont: {
         fontFamily: 'Roboto',
     },
+
+    logoStyle: {
+        height: '200px',
+    },
+
+    titleStyle: {
+        paddingTop: '50px',
+    },
 };
 
 module.exports = styles;
