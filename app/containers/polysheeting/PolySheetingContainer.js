@@ -77,38 +77,33 @@ export default class PolySheetingContainer extends React.Component {
     render(){
         return(
                 <PolySheeting
-                    onUpdateFour_TenClear={this.handleUpdateFour_TenClear.bind(this)}
                     onFocusQuantity={this.handleFocusQuantity}
+
+                    onUpdateFour_TenClear={this.handleUpdateFour_TenClear.bind(this)}
                     four_TenClearQuantity={this.props.four_TenClearQuantity}
                     four_TenClearCost={this.props.four_TenClearCost}
                     
                     onUpdateFour_TwentyEq={this.handleUpdateFour_TwentyEq.bind(this)}
-                    onFocusQuantity={this.handleFocusQuantity}
                     four_TwentyEqQuantity={this.props.four_TwentyEqQuantity}
                     four_TwentyEqCost={this.props.four_TwentyEqCost}
                     
                     onUpdateFour_Twenty={this.handleUpdateFour_Twenty.bind(this)}
-                    onFocusQuantity={this.handleFocusQuantity}
                     four_TwentyQuantity={this.props.four_TwentyQuantity}
                     four_TwentyCost={this.props.four_TwentyCost}
                     
                     onUpdateFour_TwentyBlack={this.handleUpdateFour_TwentyBlack.bind(this)}
-                    onFocusQuantity={this.handleFocusQuantity}
                     four_TwentyBlackQuantity={this.props.four_TwentyBlackQuantity}
                     four_TwentyBlackCost={this.props.four_TwentyBlackCost}
                     
                     onUpdateSix_TwentyEq={this.handleUpdateSix_TwentyEq.bind(this)}
-                    onFocusQuantity={this.handleFocusQuantity}
                     six_TwentyEqQuantity={this.props.six_TwentyEqQuantity}
                     six_TwentyEqCost={this.props.six_TwentyEqCost}
                     
                     onUpdateSix_TwentyClear={this.handleUpdateSix_TwentyClear.bind(this)}
-                    onFocusQuantity={this.handleFocusQuantity}
                     six_TwentyClearQuantity={this.props.six_TwentyClearQuantity}
                     six_TwentyClearCost={this.props.six_TwentyClearCost}
                     
                     onUpdateSix_TwentyBlack={this.handleUpdateSix_TwentyBlack.bind(this)}
-                    onFocusQuantity={this.handleFocusQuantity}
                     six_TwentyBlackQuantity={this.props.six_TwentyBlackQuantity}
                     six_TwentyBlackCost={this.props.six_TwentyBlackCost} />
             );
