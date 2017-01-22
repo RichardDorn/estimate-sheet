@@ -2,10 +2,12 @@ var React = require('react');
 var ClientContactInfoContainer = require('../containers/projectinfo/ClientContactInfoContainer');
 var PropTypes = React.PropTypes;
 var styles = require('../styles');
+import Divider from 'material-ui/Divider';
+import TextField from 'material-ui/TextField';
 
 function ProjectInfo(props) {
     return (
-        <div style={styles.componentContainer}>
+        <div>
             <div className="row">
                 <div className="col-sm-4">
                     <h2><u>Project Info</u></h2>
@@ -15,18 +17,30 @@ function ProjectInfo(props) {
             <div className="row">
                 <div className="form group">
                     <div className="col-sm-4">
-                        <input
+                        <TextField
+                            name="Estimate #"
+                            fullWidth={true}
+                            underlineStyle={styles.underlineStyle}
+                            underlineFocusStyle={styles.underlineFocusStyle}
+                            floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+                            floatingLabelText="Estimate #:"
                             className="form-control"
-                            placeholder="Estimate #:"
+                            hintText="9999-001"
                             onChange={props.onUpdateEstimateNumber}
                             value={props.estimateNumber}
                             type="text" />
                     </div>
 
                     <div className="col-sm-8">
-                        <input
+                        <TextField
+                            name="Project Address"
+                            fullWidth={true}
+                            underlineStyle={styles.underlineStyle}
+                            underlineFocusStyle={styles.underlineFocusStyle}
+                            floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+                            floatingLabelText="Project Address:"
                             className="form-control"
-                            placeholder="Project Address:"
+                            hintText="1234 Main St. Anytown, TX 77777"
                             onChange={props.onUpdateProjectAddress}
                             value={props.projectAddress}
                             type="text" />
@@ -34,6 +48,7 @@ function ProjectInfo(props) {
                 </div>
             </div>
             <ClientContactInfoContainer />
+            <Divider  style={styles.dividerStyle} />
         </div>
         );
 };

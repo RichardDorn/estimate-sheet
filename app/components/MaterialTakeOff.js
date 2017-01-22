@@ -1,9 +1,10 @@
 var React = require('react');
 var styles = require('../styles');
+import Divider from 'material-ui/Divider';
 
 function MaterialTakeOff(props) {
     return (
-        <div style={styles.componentContainer}>
+        <div>
             <div className="form-group">
                 <div className="row">
                     <div className="col-sm-4">
@@ -12,6 +13,7 @@ function MaterialTakeOff(props) {
                 </div>
                 {props.children}
             </div>
+            <Divider style={styles.dividerStyle} />
         </div>
         );
 };

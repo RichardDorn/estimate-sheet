@@ -3,14 +3,30 @@ var styles = {
         marginBottom: '25px',
     },
 
-    componentContainer: {
+    dividerStyle: {
         borderBottom: '2px groove gray',
     },
 
+    underlineStyle: {
+        width: 'calc(100% - 20px)',
+    },
+
+    underlineFocusStyle: {
+        borderColor: 'green',
+    },
+
+    floatingLabelFocusStyle: {
+        color: 'green'
+    },
+
     homeContainer: {
-        border: '2px solid black',
+        
         borderRadius: '5px',
         background: '#E1E5F2',
+    },
+
+    bodyFont: {
+        fontFamily: 'Roboto',
     },
 };
 

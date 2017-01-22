@@ -1,6 +1,7 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 var styles = require('../styles');
+import TextField from 'material-ui/TextField';
 
 function ClientContactInfo(props) {
     return (
@@ -11,20 +12,32 @@ function ClientContactInfo(props) {
                 </div>
             </div>
 
-            <div className="row" style={styles.space}>
+            <div className="row" >
                 <div className="col-sm-4">
-                    <input
+                    <TextField
+                        name="Client Name"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
+                        floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+                        floatingLabelText="Name:"
                         className="form-control"
-                        placeholder="Name:"
+                        hintText="John Smith"
                         onChange={props.onUpdateClientName}
                         value={props.clientName}
                         type="text" />
                 </div>
                 
                 <div className="col-sm-4">
-                    <input
+                    <TextField
+                        name="Client E-Mail"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
+                        floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+                        floatingLabelText="E-Mail:"
                         className="form-control"
-                        placeholder="E-Mail:"
+                        hintText="Name@example.com"
                         onChange={props.onUpdateClientEmail}
                         value={props.clientEmail}
                         type="email" />
@@ -33,18 +46,30 @@ function ClientContactInfo(props) {
 
             <div className="row" style={styles.space}>
                 <div className="col-sm-4">
-                    <input
+                    <TextField
+                        name="Client Phone"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
+                        floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+                        floatingLabelText="Phone:"
                         className="form-control"
-                        placeholder="Phone:"
+                        hintText="(555) 555-5555"
                         onChange={props.onUpdateClientPhone}
                         value={props.clientPhone}
                         type="tel" />
                 </div>
                 
                 <div className="col-sm-8">
-                    <input
+                    <TextField
+                        name="Client Address"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
+                        floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+                        floatingLabelText="Address:"
                         className="form-control"
-                        placeholder="Address:"
+                        hintText="1234 Main St. Anytown, TX 77777"
                         onChange={props.onUpdateClientAddress}
                         value={props.clientAddress}
                         type="text" />

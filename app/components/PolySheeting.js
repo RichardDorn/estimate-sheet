@@ -1,6 +1,7 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
 var styles = require('../styles');
+import TextField from 'material-ui/TextField';
 
 function PolySheeting(props) {
     return (
@@ -17,9 +18,13 @@ function PolySheeting(props) {
                 </div>
 
                 <div className="col-sm-2">
-                    <input
+                    <TextField
+                        name="Four x Ten Clear"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
                         className="form-control"
-                        placeholder="0"
+                        hintText="0"
                         onChange={props.onUpdateFour_TenClear}
                         onFocus={props.onFocusQuantity}
                         value={props.four_TenClearQuantity}
@@ -38,7 +43,11 @@ function PolySheeting(props) {
                 </div>  
                 
                 <div className="col-sm-2">
-                    <input
+                    <TextField
+                        name="Four x Twenty Equivalent"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
                         className="form-control"
                         placeholder="0"
                         onChange={props.onUpdateFour_TwentyEq}
@@ -59,9 +68,13 @@ function PolySheeting(props) {
                 </div>  
                 
                 <div className="col-sm-2">
-                    <input
+                    <TextField
+                        name="Four x Twenty"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
                         className="form-control"
-                        placeholder="0"
+                        hintText="0"
                         onChange={props.onUpdateFour_Twenty}
                         onFocus={props.onFocusQuantity}
                         value={props.four_TwentyQuantity}
@@ -80,9 +93,13 @@ function PolySheeting(props) {
                 </div>  
                 
                 <div className="col-sm-2">
-                    <input
+                    <TextField
+                        name="Four x Twenty Black"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
                         className="form-control"
-                        placeholder="0"
+                        hintText="0"
                         onChange={props.onUpdateFour_TwentyBlack}
                         onFocus={props.onFocusQuantity}
                         value={props.four_TwentyBlackQuantity}
@@ -101,9 +118,13 @@ function PolySheeting(props) {
                 </div>  
                 
                 <div className="col-sm-2">
-                    <input
+                    <TextField
+                        name="Six x Twenty Equivalent"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
                         className="form-control"
-                        placeholder="0"
+                        hintText="0"
                         onChange={props.onUpdateSix_TwentyEq}
                         onFocus={props.onFocusQuantity}
                         value={props.six_TwentyEqQuantity}
@@ -122,9 +143,13 @@ function PolySheeting(props) {
                 </div>  
                 
                 <div className="col-sm-2">
-                    <input
+                    <TextField
+                        name="Six x Twenty Clear"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
                         className="form-control"
-                        placeholder="0"
+                        hintText="0"
                         onChange={props.onUpdateSix_TwentyClear}
                         onFocus={props.onFocusQuantity}
                         value={props.six_TwentyClearQuantity}
@@ -143,9 +168,13 @@ function PolySheeting(props) {
                 </div>  
                 
                 <div className="col-sm-2">
-                    <input
+                    <TextField
+                        name="Six x Twenty Black"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
                         className="form-control"
-                        placeholder="0"
+                        hintText="0"
                         onChange={props.onUpdateSix_TwentyBlack}
                         onFocus={props.onFocusQuantity}
                         value={props.six_TwentyBlackQuantity}
