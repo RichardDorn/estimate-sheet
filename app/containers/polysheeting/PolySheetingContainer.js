@@ -8,7 +8,7 @@ import {updateFour_TwentyBlack} from "./polySheetingActions";
 import {updateSix_TwentyEq} from "./polySheetingActions";
 import {updateSix_TwentyClear} from "./polySheetingActions";
 import {updateSix_TwentyBlack} from "./polySheetingActions";
-import {calcTotalCost} from "./polySheetingActions";
+import {calcTotalPolyCost} from "./polySheetingActions";
 
 @connect((store) => {
     return {
@@ -32,7 +32,7 @@ import {calcTotalCost} from "./polySheetingActions";
 export default class PolySheetingContainer extends React.Component {
     componentDidUpdate(){
         var newTotal = this.props.four_TenClearCost + this.props.four_TwentyEqCost + this.props.four_TwentyCost + this.props.four_TwentyBlackCost +this.props. six_TwentyEqCost + this.props.six_TwentyClearCost + this.props.six_TwentyBlackCost;
-        this.props.dispatch(calcTotalCost(newTotal.toFixed(2)));
+        this.props.dispatch(calcTotalPolyCost(newTotal.toFixed(2)));
     }
     
     handleUpdateFour_TenClear (e){

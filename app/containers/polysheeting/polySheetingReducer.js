@@ -13,14 +13,14 @@ export default function reducer(state={
     six_TwentyClearCost: 0,
     six_TwentyBlackQuantity: 0,
     six_TwentyBlackCost: 0,
-    totalCost: 0
+    totalPolyCost: 0
     }, action) {
 
         switch (action.type) {
-            case "CALCULATE_TOTAL_COST": {
+            case "CALCULATE_TOTAL_POLY_COST": {
                 return {
                     ...state,
-                    totalCost: action.payload
+                    totalPolyCost: action.payload
                 }
             }
             

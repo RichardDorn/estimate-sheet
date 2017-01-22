@@ -5,7 +5,6 @@ var MaterialItem = require('./MaterialItem');
 var MaterialName = require('./MaterialName');
 var MaterialInput = require('./MaterialInput');
 var MaterialCost = require('./MaterialCost');
-import TextField from 'material-ui/TextField';
 
 function PolySheeting(props) {
     return (
@@ -103,6 +102,8 @@ function PolySheeting(props) {
 };
 
 PolySheeting.propTypes = {
+    onFocusQuantity: PropTypes.func.isRequired,
+
     onUpdateFour_TenClear: PropTypes.func.isRequired,
     four_TenClearQuantity: PropTypes.number.isRequired,
     four_TenClearCost: PropTypes.number.isRequired,

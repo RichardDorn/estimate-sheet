@@ -1,6 +1,6 @@
-export function calcTotalCost(newTotal) {
+export function calcTotalPolyCost(newTotal) {
     return {
-        type: "CALCULATE_TOTAL_COST",
+        type: "CALCULATE_TOTAL_POLY_COST",
         payload: newTotal
     }
 }
