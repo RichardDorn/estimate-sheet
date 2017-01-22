@@ -1,102 +1,105 @@
 var React = require('react');
 var PropTypes = React.PropTypes;
-var MaterialSet = require('./MaterialSet');
 var MaterialItem = require('./MaterialItem');
 var MaterialName = require('./MaterialName');
 var MaterialInput = require('./MaterialInput');
 var MaterialCost = require('./MaterialCost');
+import {Card, CardHeader, CardText} from 'material-ui/Card';
 
 function PolySheeting(props) {
     return (
-        <div>
-            <MaterialSet 
-                heading="PolySheeting" >
-                
-                <MaterialItem>
-                    <MaterialName
-                        materialName="4x10 Clear" />
-                    <MaterialInput 
-                        name="4x10 Clear"
-                        handleChange={props.onUpdateFour_TenClear}
-                        handleFocus={props.onFocusQuantity}
-                        value={props.four_TenClearQuantity} />
-                    <MaterialCost
-                        materialCost={props.four_TenClearCost} />
-                </MaterialItem>
+        <div>   
+            <Card>
+                <CardHeader 
+                    title="PolySheeting"
+                    actAsExpander={true}
+                    showExpandableButton={true} />
+                <CardText expandable={true}>
+                    <MaterialItem>
+                        <MaterialName
+                            materialName="4x10 Clear" />
+                        <MaterialInput 
+                            name="4x10 Clear"
+                            handleChange={props.onUpdateFour_TenClear}
+                            handleFocus={props.onFocusQuantity}
+                            value={props.four_TenClearQuantity} />
+                        <MaterialCost
+                            materialCost={props.four_TenClearCost} />
+                    </MaterialItem>
 
-                <MaterialItem>
-                    <MaterialName
-                        materialName="4x20 Equivalent" />
-                    <MaterialInput 
-                        name="4x20 Equivalent"
-                        handleChange={props.onUpdateFour_TwentyEq}
-                        handleFocus={props.onFocusQuantity}
-                        value={props.four_TwentyEqQuantity} />
-                    <MaterialCost
-                        materialCost={props.four_TwentyEqCost} />
-                </MaterialItem>
+                    <MaterialItem>
+                        <MaterialName
+                            materialName="4x20 Equivalent" />
+                        <MaterialInput 
+                            name="4x20 Equivalent"
+                            handleChange={props.onUpdateFour_TwentyEq}
+                            handleFocus={props.onFocusQuantity}
+                            value={props.four_TwentyEqQuantity} />
+                        <MaterialCost
+                            materialCost={props.four_TwentyEqCost} />
+                    </MaterialItem>
 
-                <MaterialItem>
-                    <MaterialName
-                        materialName="4x20" />
-                    <MaterialInput 
-                        name="4x20"
-                        handleChange={props.onUpdateFour_Twenty}
-                        handleFocus={props.onFocusQuantity}
-                        value={props.four_TwentyQuantity} />
-                    <MaterialCost
-                        materialCost={props.four_TwentyCost} />
-                </MaterialItem>
+                    <MaterialItem>
+                        <MaterialName
+                            materialName="4x20" />
+                        <MaterialInput 
+                            name="4x20"
+                            handleChange={props.onUpdateFour_Twenty}
+                            handleFocus={props.onFocusQuantity}
+                            value={props.four_TwentyQuantity} />
+                        <MaterialCost
+                            materialCost={props.four_TwentyCost} />
+                    </MaterialItem>
 
-                <MaterialItem>
-                    <MaterialName
-                        materialName="4x20 Black" />
-                    <MaterialInput 
-                        name="4x20 Black"
-                        handleChange={props.onUpdateFour_TwentyBlack}
-                        handleFocus={props.onFocusQuantity}
-                        value={props.four_TwentyBlackQuantity} />
-                    <MaterialCost
-                        materialCost={props.four_TwentyBlackCost} />
-                </MaterialItem>
+                    <MaterialItem>
+                        <MaterialName
+                            materialName="4x20 Black" />
+                        <MaterialInput 
+                            name="4x20 Black"
+                            handleChange={props.onUpdateFour_TwentyBlack}
+                            handleFocus={props.onFocusQuantity}
+                            value={props.four_TwentyBlackQuantity} />
+                        <MaterialCost
+                            materialCost={props.four_TwentyBlackCost} />
+                    </MaterialItem>
 
-                <MaterialItem>
-                    <MaterialName
-                        materialName="6x20 Equivalent" />
-                    <MaterialInput 
-                        name="6x20 Equivalent"
-                        handleChange={props.onUpdateSix_TwentyEq}
-                        handleFocus={props.onFocusQuantity}
-                        value={props.six_TwentyEqQuantity} />
-                    <MaterialCost
-                        materialCost={props.six_TwentyEqCost} />
-                </MaterialItem>
+                    <MaterialItem>
+                        <MaterialName
+                            materialName="6x20 Equivalent" />
+                        <MaterialInput 
+                            name="6x20 Equivalent"
+                            handleChange={props.onUpdateSix_TwentyEq}
+                            handleFocus={props.onFocusQuantity}
+                            value={props.six_TwentyEqQuantity} />
+                        <MaterialCost
+                            materialCost={props.six_TwentyEqCost} />
+                    </MaterialItem>
 
-                <MaterialItem>
-                    <MaterialName
-                        materialName="6x20 Clear" />
-                    <MaterialInput 
-                        name="6x20 Clear"
-                        handleChange={props.onUpdateSix_TwentyClear}
-                        handleFocus={props.onFocusQuantity}
-                        value={props.six_TwentyClearQuantity} />
-                    <MaterialCost
-                        materialCost={props.six_TwentyClearCost} />
-                </MaterialItem>
+                    <MaterialItem>
+                        <MaterialName
+                            materialName="6x20 Clear" />
+                        <MaterialInput 
+                            name="6x20 Clear"
+                            handleChange={props.onUpdateSix_TwentyClear}
+                            handleFocus={props.onFocusQuantity}
+                            value={props.six_TwentyClearQuantity} />
+                        <MaterialCost
+                            materialCost={props.six_TwentyClearCost} />
+                    </MaterialItem>
 
-                <MaterialItem>
-                    <MaterialName
-                        materialName="6x20 Black" />
-                    <MaterialInput 
-                        name="6x20 Black"
-                        handleChange={props.onUpdateSix_TwentyBlack}
-                        handleFocus={props.onFocusQuantity}
-                        value={props.six_TwentyBlackQuantity} />
-                    <MaterialCost
-                        materialCost={props.six_TwentyBlackCost} />
-                </MaterialItem>
-                 
-            </MaterialSet>
+                    <MaterialItem>
+                        <MaterialName
+                            materialName="6x20 Black" />
+                        <MaterialInput 
+                            name="6x20 Black"
+                            handleChange={props.onUpdateSix_TwentyBlack}
+                            handleFocus={props.onFocusQuantity}
+                            value={props.six_TwentyBlackQuantity} />
+                        <MaterialCost
+                            materialCost={props.six_TwentyBlackCost} />
+                    </MaterialItem>
+                </CardText>
+            </Card>
         </div>
         );
 };
