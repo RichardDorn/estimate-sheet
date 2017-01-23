@@ -1,7 +1,7 @@
-var React = require('react');
-var ProjectInfoContainer = require('../containers/projectinfo/ProjectInfoContainer');
-var MaterialTakeOffContainer = require('../containers/materialtakeoff/MaterialTakeOffContainer');
-var styles = require('../styles');
+import React from "react";
+import ProjectInfoContainer from "../containers/projectinfo/ProjectInfoContainer";
+import MaterialTakeOffContainer from "../containers/materialtakeoff/MaterialTakeOffContainer";
+import styles from "../styles";
 import Paper from 'material-ui/Paper';
 
 function Home (props){

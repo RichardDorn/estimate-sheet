@@ -1,6 +1,6 @@
-var React = require('react');
+import React from "react";
 var PropTypes = React.PropTypes;
-var styles = require('../styles');
+import styles from "../styles";
 import TextField from 'material-ui/TextField';
 
 function MaterialInput(props) {

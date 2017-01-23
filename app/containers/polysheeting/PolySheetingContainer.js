@@ -1,5 +1,5 @@
-var React = require('react');
-var PolySheeting = require('../../components/PolySheeting');
+import React from "react";
+import PolySheeting from "../../components/PolySheeting";
 import {connect} from "react-redux";
 import {updateFour_TenClear} from "./polySheetingActions";
 import {updateFour_TwentyEq} from "./polySheetingActions";

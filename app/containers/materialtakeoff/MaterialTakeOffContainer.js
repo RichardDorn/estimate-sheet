@@ -1,7 +1,7 @@
-var React = require('react');
-var MaterialTakeOff = require('../../components/MaterialTakeOff');
-var PolySheetingContainer = require('../polysheeting/PolySheetingContainer');
-var BagsBarrelsContainer = require('../bagsbarrels/BagsBarrelsContainer');
+import React from "react";
+import MaterialTakeOff from "../../components/MaterialTakeOff";
+import PolySheetingContainer from "../polysheeting/PolySheetingContainer";
+import BagsBarrelsContainer from "../bagsbarrels/BagsBarrelsContainer";
 
 var MaterialTakeOffContainer = React.createClass({
 

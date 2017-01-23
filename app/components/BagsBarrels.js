@@ -1,9 +1,9 @@
-var React = require('react');
+import React from "react";
 var PropTypes = React.PropTypes;
-var MaterialItem = require('./MaterialItem');
-var MaterialName = require('./MaterialName');
-var MaterialInput = require('./MaterialInput');
-var MaterialCost = require('./MaterialCost');
+import MaterialItem from "./MaterialItem";
+import MaterialName from "./MaterialName";
+import MaterialInput from "./MaterialInput";
+import MaterialCost from "./MaterialCost";
 import {Card, CardHeader, CardText} from 'material-ui/Card';
 
 function BagsBarrels(props) {

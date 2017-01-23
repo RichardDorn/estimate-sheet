@@ -1,7 +1,7 @@
-var React = require('react');
-var ClientContactInfoContainer = require('../containers/projectinfo/ClientContactInfoContainer');
+import React from "react";
+import ClientContactInfoContainer from "../containers/projectinfo/ClientContactInfoContainer";
 var PropTypes = React.PropTypes;
-var styles = require('../styles');
+import styles from "../styles";
 import Divider from 'material-ui/Divider';
 import TextField from 'material-ui/TextField';
 

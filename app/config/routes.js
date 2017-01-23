@@ -1,11 +1,11 @@
-var React = require('react');
+import React from "react";
 var ReactRouter = require('react-router');
 var Router = ReactRouter.Router;
 var Route = ReactRouter.Route;
 var IndexRoute = ReactRouter.IndexRoute;
 var hashHistory = ReactRouter.hashHistory;
-var Main = require('../components/Main');
-var Home = require('../components/Home');
+import Main from "../components/Main";
+import Home from "../components/Home";
 import {Provider} from "react-redux";
 import store from "../store";
 

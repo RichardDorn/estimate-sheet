@@ -1,5 +1,5 @@
-var React = require('react');
-var BagsBarrels = require('../../components/BagsBarrels');
+import React from "react";
+import BagsBarrels from "../../components/BagsBarrels";
 import {connect} from "react-redux";
 import {updateThirtyEight_SixtyClearGenDeb} from "./bagsBarrelsActions";
 import {updateFiberBarrels} from "./bagsBarrelsActions";

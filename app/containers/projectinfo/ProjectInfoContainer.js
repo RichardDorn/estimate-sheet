@@ -1,5 +1,5 @@
-var React = require('react');
-var ProjectInfo = require('../../components/ProjectInfo');
+import React from "react";
+import ProjectInfo from "../../components/ProjectInfo";
 import {connect} from "react-redux";
 import {updateEstimateNumber} from "./projectInfoActions";
 import {updateProjectAddress} from "./projectInfoActions";

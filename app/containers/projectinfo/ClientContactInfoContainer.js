@@ -1,5 +1,5 @@
-var React = require('react');
-var ClientContactInfo = require('../../components/ClientContactInfo');
+import React from "react";
+import ClientContactInfo from "../../components/ClientContactInfo";
 import {connect} from "react-redux";
 import {updateClientName} from "./clientContactInfoActions";
 import {updateClientAddress} from "./clientContactInfoActions";

@@ -1,7 +1,7 @@
-var React = require('react');
-var styles = require('../styles');
+import React from "react";
+import styles from "../styles";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-var injectTapEventPlugin = require("react-tap-event-plugin");
+import injectTapEventPlugin from "react-tap-event-plugin";
 injectTapEventPlugin();
 
 var Main = React.createClass({
