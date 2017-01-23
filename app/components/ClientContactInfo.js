@@ -15,6 +15,21 @@ function ClientContactInfo(props) {
             <div className="row" >
                 <div className="col-sm-4">
                     <TextField
+                        name="Client Company"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
+                        floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+                        floatingLabelText="Company:"
+                        className="form-control"
+                        hintText="American Airlines"
+                        onChange={props.onUpdateClientCompany}
+                        value={props.clientCompany}
+                        type="text" />
+                </div>
+                
+                <div className="col-sm-4">
+                    <TextField
                         name="Client Name"
                         fullWidth={true}
                         underlineStyle={styles.underlineStyle}

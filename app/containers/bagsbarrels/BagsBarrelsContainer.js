@@ -25,25 +25,33 @@ export default class BagsBarrelsContainer extends React.Component {
         var newTotal = this.props.thirtyEight_SixtyClearGenDebCost + this.props.fiberBarrelsCost + this.props.thirty_FortyClearABCost + this.props.thirty_FortyBlackABCost;
         this.props.dispatch(calcTotalBagsBarrelsCost(newTotal.toFixed(2)));
     }
+
+    handleNaN(value, updateMaterialName){
+        if(isNaN(value)){
+            this.props.dispatch(updateMaterialName(0));
+        }else{
+            this.props.dispatch(updateMaterialName(value));
+        }
+    }
     
     handleUpdateThirtyEight_SixtyClearGenDeb(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateThirtyEight_SixtyClearGenDeb(value));
+        this.handleNaN(value, updateThirtyEight_SixtyClearGenDeb);
     }
 
     handleUpdateFiberBarrels(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateFiberBarrels(value));
+        this.handleNaN(value, updateFiberBarrels);
     }
 
     handleUpdateThirty_FortyClearAB(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateThirty_FortyClearAB(value));
+        this.handleNaN(value, updateThirty_FortyClearAB);
     }
 
     handleUpdateThirty_FortyBlackAB(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateThirty_FortyBlackAB(value));
+        this.handleNaN(value, updateThirty_FortyBlackAB);
     }
 
     handleFocusQuantity(e){

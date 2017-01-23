@@ -1,3 +1,10 @@
+export function updateClientCompany(value) {
+    return {
+        type: "UPDATE_CLIENT_COMPANY",
+        payload: value
+    }
+}
+
 export function updateClientName(value) {
     return {
         type: "UPDATE_CLIENT_NAME",

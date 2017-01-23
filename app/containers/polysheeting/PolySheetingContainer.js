@@ -35,39 +35,47 @@ export default class PolySheetingContainer extends React.Component {
         this.props.dispatch(calcTotalPolyCost(newTotal.toFixed(2)));
     }
     
-    handleUpdateFour_TenClear (e){
+    handleNaN(value, updateMaterialName){
+        if(isNaN(value)){
+            this.props.dispatch(updateMaterialName(0));
+        }else{
+            this.props.dispatch(updateMaterialName(value));
+        }
+    }
+
+    handleUpdateFour_TenClear(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateFour_TenClear(value));
+        this.handleNaN(value, updateFour_TenClear);
     }
 
     handleUpdateFour_TwentyEq(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateFour_TwentyEq(value));
+        this.handleNaN(value, updateFour_TwentyEq);
     }
 
     handleUpdateFour_Twenty(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateFour_Twenty(value));
+        this.handleNaN(value, updateFour_Twenty);
     }
 
     handleUpdateFour_TwentyBlack(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateFour_TwentyBlack(value));
+        this.handleNaN(value, updateFour_TwentyBlack);
     }
 
     handleUpdateSix_TwentyEq(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateSix_TwentyEq(value));
+        this.handleNaN(value, updateSix_TwentyEq);
     }
 
     handleUpdateSix_TwentyClear(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateSix_TwentyClear(value));
+        this.handleNaN(value, updateSix_TwentyClear);
     }
 
     handleUpdateSix_TwentyBlack(e){
         var value = parseInt(e.target.value);
-        this.props.dispatch(updateSix_TwentyBlack(value));
+        this.handleNaN(value, updateSix_TwentyBlack);
     }
 
     handleFocusQuantity(e){

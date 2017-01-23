@@ -1,4 +1,5 @@
 export default function reducer(state={
+    clientCompany: '',
     clientName: '',
     clientAddress: '',
     clientPhone: '',
@@ -6,6 +7,13 @@ export default function reducer(state={
     }, action) {
 
         switch (action.type) {
+            case "UPDATE_CLIENT_COMPANY": {
+                return {
+                    ...state,
+                    clientCompany: action.payload
+                }
+            }
+            
             case "UPDATE_CLIENT_NAME": {
                 return {
                     ...state,
