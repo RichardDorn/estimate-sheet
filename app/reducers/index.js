@@ -10,6 +10,7 @@ import chemicals from "../containers/chemicals/chemicalsReducer";
 import filters from "../containers/filters/filtersReducer";
 import handTools from "../containers/handtools/handToolsReducer";
 import respirators from "../containers/respirators/respiratorsReducer";
+import safetyEquipment from "../containers/safetyequipment/safetyEquipmentReducer";
 
 export default combineReducers({
     projectInfo,
@@ -23,4 +24,5 @@ export default combineReducers({
     filters,
     handTools,
     respirators,
+    safetyEquipment,
 })

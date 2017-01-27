@@ -9,6 +9,7 @@ import ChemicalsContainer from "../chemicals/ChemicalsContainer";
 import FiltersContainer from "../filters/FiltersContainer";
 import HandToolsContainer from "../handtools/HandToolsContainer";
 import RespiratorsContainer from "../respirators/RespiratorsContainer";
+import SafetyEquipmentContainer from "../safetyequipment/SafetyEquipmentContainer";
 
 var MaterialTakeOffContainer = React.createClass({
 
@@ -24,6 +25,7 @@ var MaterialTakeOffContainer = React.createClass({
                 <FiltersContainer />
                 <HandToolsContainer />
                 <RespiratorsContainer />
+                <SafetyEquipmentContainer />
             </MaterialTakeOff>
             );
     }
