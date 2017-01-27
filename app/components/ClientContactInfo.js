@@ -27,7 +27,24 @@ function ClientContactInfo(props) {
                         value={props.clientCompany}
                         type="text" />
                 </div>
-                
+
+                <div className="col-sm-8">
+                    <TextField
+                        name="Client Address"
+                        fullWidth={true}
+                        underlineStyle={styles.underlineStyle}
+                        underlineFocusStyle={styles.underlineFocusStyle}
+                        floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
+                        floatingLabelText="Address:"
+                        className="form-control"
+                        hintText="1234 Main St. Anytown, TX 77777"
+                        onChange={props.onUpdateClientAddress}
+                        value={props.clientAddress}
+                        type="text" />
+                </div>
+            </div>
+
+            <div className="row" style={styles.space}>
                 <div className="col-sm-4">
                     <TextField
                         name="Client Name"
@@ -45,23 +62,6 @@ function ClientContactInfo(props) {
                 
                 <div className="col-sm-4">
                     <TextField
-                        name="Client E-Mail"
-                        fullWidth={true}
-                        underlineStyle={styles.underlineStyle}
-                        underlineFocusStyle={styles.underlineFocusStyle}
-                        floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
-                        floatingLabelText="E-Mail:"
-                        className="form-control"
-                        hintText="Name@example.com"
-                        onChange={props.onUpdateClientEmail}
-                        value={props.clientEmail}
-                        type="email" />
-                </div>
-            </div>
-
-            <div className="row" style={styles.space}>
-                <div className="col-sm-4">
-                    <TextField
                         name="Client Phone"
                         fullWidth={true}
                         underlineStyle={styles.underlineStyle}
@@ -75,19 +75,19 @@ function ClientContactInfo(props) {
                         type="tel" />
                 </div>
                 
-                <div className="col-sm-8">
+                <div className="col-sm-4">
                     <TextField
-                        name="Client Address"
+                        name="Client E-Mail"
                         fullWidth={true}
                         underlineStyle={styles.underlineStyle}
                         underlineFocusStyle={styles.underlineFocusStyle}
                         floatingLabelFocusStyle={styles.floatingLabelFocusStyle}
-                        floatingLabelText="Address:"
+                        floatingLabelText="E-Mail:"
                         className="form-control"
-                        hintText="1234 Main St. Anytown, TX 77777"
-                        onChange={props.onUpdateClientAddress}
-                        value={props.clientAddress}
-                        type="text" />
+                        hintText="Name@example.com"
+                        onChange={props.onUpdateClientEmail}
+                        value={props.clientEmail}
+                        type="email" />
                 </div>
             </div>
         </div>

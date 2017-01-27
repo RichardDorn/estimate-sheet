@@ -1,5 +1,6 @@
 import React from "react";
 var PropTypes = React.PropTypes;
+import styles from "../styles";
 import MaterialItem from "./MaterialItem";
 import MaterialName from "./MaterialName";
 import MaterialInput from "./MaterialInput";
@@ -37,6 +38,9 @@ function PolySheeting(props) {
                             value={props.four_TwentyEqQuantity} />
                         <MaterialCost
                             materialCost={props.four_TwentyEqCost} />
+                        <div className="col-sm-4">
+                            <p style={styles.priceWarning}>NEEDS CORRECT PRICE!!</p>
+                        </div>
                     </MaterialItem>
 
                     <MaterialItem>

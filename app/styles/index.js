@@ -36,6 +36,10 @@ var styles = {
     titleStyle: {
         paddingTop: '50px',
     },
+
+    priceWarning: {
+        color: 'red',
+    },
 };
 
 module.exports = styles;
